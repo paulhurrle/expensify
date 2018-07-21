@@ -8,7 +8,7 @@ module.exports = (env) => { // by calling a function here that returns an object
   return {
     entry: './src/app.js', // the entry point for the app
     output: {
-      path: path.join(__dirname, 'public'), // absolute path on machine where webpack file will be ouputted
+      path: path.join(__dirname, 'public', 'dist'), // absolute path on machine where webpack file will be ouputted
       filename: 'bundle.js' // can be anything
     },
     module: { // this is where specify loaders like babel-loader, also requires separate .babelrc file
@@ -42,7 +42,8 @@ module.exports = (env) => { // by calling a function here that returns an object
     devtool: isProduction ? 'source-map' : 'inline-source-map', // this is for setting up source maps
     devServer: {
       contentBase: path.join(__dirname, 'public'),
-      historyApiFallback: true
+      historyApiFallback: true,
+      publicPath: '/dist/'
     }
   };
 };
