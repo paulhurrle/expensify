@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const app = express();
 const publicPath = path.join(__dirname, '..', 'public');
+
 const port = process.env.PORT || 3000; // process.env.PORT is the env variable that Heroku dynamically assigns
 
 app.use(express.static(publicPath)); // fire up and use express

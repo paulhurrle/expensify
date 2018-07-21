@@ -32,7 +32,7 @@ module.exports = (env) => { // by calling a function here that returns an object
                 sourceMap: true
               }
             }
-          ] 
+          ]
         })
       }]
     },
