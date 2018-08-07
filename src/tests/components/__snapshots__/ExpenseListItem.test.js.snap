@@ -4,7 +4,6 @@ exports[`should render ExpenseListItem with expense 1`] = `
 <div>
   <NavLink
     activeClassName="active"
-    ariaCurrent="true"
     to="/edit/1/"
   >
     <h3>
@@ -12,17 +11,13 @@ exports[`should render ExpenseListItem with expense 1`] = `
     </h3>
   </NavLink>
   <ul>
-    <li
-      key="Gum-195"
-    >
+    <li>
       Amount: 
-      195
+      $1.95
     </li>
-    <li
-      key="Gum-0"
-    >
+    <li>
       Created: 
-      0
+      December 31st, 1969
     </li>
   </ul>
 </div>
